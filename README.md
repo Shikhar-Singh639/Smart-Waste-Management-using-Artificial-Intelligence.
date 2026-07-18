@@ -62,26 +62,53 @@ Web dashboard
 Mobile notifications
 
 6. System Architecture
-                 +------------------+
-                 | Smart Dustbin    |
-                 | Ultrasonic Sensor|
-                 +--------+---------+
-                          |
-                          |
-                    ESP32 / NodeMCU
-                          |
-                     Wi-Fi Internet
-                          |
-                   Cloud Database
-                          |
-      +-------------------+--------------------+
-      |                                        |
-      |                                        |
- AI Prediction Model                 Web Dashboard
-      |                                        |
-      +-------------------+--------------------+
-                          |
-                   Collection Vehicle
+                      +----------------------+
+                      |      Smart Bin       |
+                      |----------------------|
+                      | Ultrasonic Sensor    |
+                      | Gas Sensor           |
+                      | Moisture Sensor      |
+                      | Temperature Sensor   |
+                      | GPS Module           |
+                      | ESP32/NodeMCU        |
+                      +----------+-----------+
+                                 |
+                                 | Wi-Fi / GSM / LoRa
+                                 |
+                      +----------v-----------+
+                      |     IoT Gateway      |
+                      +----------+-----------+
+                                 |
+                                 |
+                      +----------v-----------+
+                      |   Cloud Database     |
+                      | (Firebase/MySQL)     |
+                      +----------+-----------+
+                                 |
+              +------------------+------------------+
+              |                                     |
+              |                                     |
+     +--------v---------+                 +---------v---------+
+     | AI/ML Prediction |                 | Data Analytics    |
+     | Fill Level       |                 | Dashboard         |
+     | Waste Forecast   |                 | Reports           |
+     | Route Optimization|                | Alerts            |
+     +--------+---------+                 +---------+---------+
+              |                                     |
+              +------------------+------------------+
+                                 |
+                      +----------v-----------+
+                      | Admin Web/Mobile App |
+                      | Monitor Bin Status   |
+                      | View Alerts          |
+                      | Assign Collection    |
+                      +----------+-----------+
+                                 |
+                                 |
+                      +----------v-----------+
+                      | Garbage Collection   |
+                      | Vehicle & Driver     |
+                      +----------------------+
    
 8. Hardware Requirements
 Component	Quantity
