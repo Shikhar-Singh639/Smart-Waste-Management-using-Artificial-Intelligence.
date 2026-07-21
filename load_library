@@ -1,0 +1,11 @@
+
+train_data = ImageDataGenerator(     rescale=1./255,     rotation_range=20,     zoom_range=0.2,     horizontal_flip=True
+)
+test_data = ImageDataGenerator(rescale=1./255)
+train_generator = train_data.flow_from_directory(
+    "dataset/train",     target_size=(224,224),     batch_size=32,     class_mode="categorical"
+)
+test_generator = test_data.flow_from_directory(
+    "dataset/test",     target_size=(224,224),     batch_size=32,     class_mode="categorical"
+)
+
