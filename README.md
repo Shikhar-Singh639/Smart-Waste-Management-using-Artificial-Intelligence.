@@ -109,6 +109,27 @@ Mobile notifications
                       | Garbage Collection   |
                       | Vehicle & Driver     |
                       +----------------------+
+
+   Simple Input–Output Flow
+
+   Inputs
+│
+├── Ultrasonic Sensor Data
+├── Bin Location
+├── Date & Time
+├── Historical Data
+│
+▼
+AI + Machine Learning Processing
+│
+▼
+Outputs
+├── Fill Level (%)
+├── Bin Status
+├── Full Bin Alert
+├── Collection Time Prediction
+├── Optimized Route
+└── Dashboard & Reports
    
 8. Hardware Requirements
 Component	Quantity
