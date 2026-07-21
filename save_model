@@ -1,0 +1,1 @@
+model.save("waste_classifier.h5")
