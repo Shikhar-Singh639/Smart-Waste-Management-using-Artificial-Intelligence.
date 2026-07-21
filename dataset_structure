@@ -1,0 +1,21 @@
+dataset/
+│
+├── train/
+├──
+├──
+├──
+└──
+│    Organic/
+│    Plastic/
+│    Paper/ │    Metal/
+│
+└── test/
+├──
+├──
+├──
+└──
+     Organic/
+     Plastic/
+     Paper/
+     Metal/
+
