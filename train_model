@@ -1,0 +1,4 @@
+history = model.fit
+(     train_generator, validation_data=test_generator, epochs=15
+)
+
